@@ -1,0 +1,9 @@
+public class SimpleLoop
+{
+   public static int sum(int low, int high)
+   { int sum;
+     for(int i=low;i<(high+1);i++)
+     { sum += i; }
+     return sum;
+   }
+}

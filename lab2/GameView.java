@@ -1,0 +1,30 @@
+/**
+   Interface for the user-interface of the game.
+*/
+public interface GameView
+{
+   /**
+      Displays winning message for player.
+      @param player The player's choice.
+      @param other The opponent's choice.
+      @param winVerb The manner in which the player wins.
+   */
+   void playerWins(GameChoice player, GameChoice other, String winVerb);
+
+   /**
+      Displays tie message.
+      @param player The player's choice.
+      @param other The opponent's choice.
+   */
+   void tie(GameChoice player, GameChoice other);
+
+   /**
+      Displays losing message for player.
+      @param player The player's choice.
+      @param other The opponent's choice.
+      @param winVerb The manner in which the opponent wins.
+   */
+   void playerLoses(GameChoice player, GameChoice other, String winVerb);
+
+}
+

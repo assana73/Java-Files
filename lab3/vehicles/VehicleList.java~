@@ -1,0 +1,9 @@
+public class vehicleList
+{ import java.util.ArrayList;
+  private int len;
+    public void main()
+    {
+        ArrayList<Vehicle>vehicleList=new	ArrayList<Vehicle>();
+	new Moped("Zabba")
+
+

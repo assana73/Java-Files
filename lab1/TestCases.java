@@ -1,0 +1,45 @@
+public class TestCases
+{
+   public static void testSimpleIf()
+   {
+      Check.check(SimpleIf.max(1.2, 1.7), 1.7);
+      Check.check(SimpleIf.max(9.0, 3.2), 9.0);
+      Check.check(SimpleIf.max(3.0, 3.0), 3.0);
+      /* TO DO: Write one more valid test case. */
+   }
+
+   public static void testSimpleLoop()
+   {
+      Check.check(SimpleLoop.sum(3, 4), 7);
+      Check.check(SimpleLoop.sum(-2, 4), 7);
+      Check.check(SimpleLoop.sum(2, 6), 20);
+      /* TO DO: Write one more valid test case to make sure that
+         this function is not just returning 7. */
+   }
+
+   public static void testSimpleArray()
+   {
+      /* What are those parameters?  They are newly allocated arrays
+         with initial values. */
+      Check.check(SimpleArray.squareAll(new int[] {1, 2, 3}), new int[] {1, 4, 9});
+      Check.check(SimpleArray.squareAll(new int[] {7, 5}), new int[] {49, 25});
+      Check.check(SimpleArray.squareAll(new int[] {12, 8}), new int[] {144, 64});
+   }
+
+   public static void testBetterLoop()
+   {
+      Check.check(BetterLoop.contains(new int[] {7, 5}, 5), true);
+      Check.check(BetterLoop.contains(new int[] {7, 5, 2, 4}, 4), true);
+      Check.check(BetterLoop.contains(new int[] {7, 5, 2, 4}, 9), false);
+
+      /* TO DO: Write a valid test case where the expected result is false. */
+   }
+
+   public static void main(String [] args)
+   {
+      testSimpleIf();
+      testSimpleLoop();
+      testSimpleArray();
+      testBetterLoop();
+   }
+}

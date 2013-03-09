@@ -1,0 +1,13 @@
+public class DandyHorse
+  implements Vehicle
+{ private String name;
+  
+  public DandyHorse ()
+  { name = new String("Bob");  }
+
+  public DandyHorse (String name)
+  { this.name= new String (name);  }
+
+  public String travel()
+  { return (name+" glides along the road.");  }
+}

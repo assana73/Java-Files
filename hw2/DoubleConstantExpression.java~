@@ -1,0 +1,13 @@
+public class DoubleCostantExpression
+{
+
+    public DoubleCostantExpression(double value)
+    {
+
+    }
+
+    public double evaluate(Bindings bindings)
+    {
+
+    }
+}
